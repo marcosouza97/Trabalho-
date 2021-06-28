@@ -4,20 +4,28 @@
 
 using namespace std;
 
-int main() {
-  int opção=0;
+//função de gravar em arquivo de textto
+void funcaoDeGravar(int valor){
+  
   ofstream gravar;
-  ifstream ler;
+
+  gravar.open("valores.txt",ios::out);
+  
+
+
+}
+
+int main() {
+  int opcao=0;
 
 
   // Solicitando a opção para o usuario
   cout <<"qual opção você deseja:" << endl;
   cout << "1 - gravar"<< endl;
   cout << "2 - ler" << endl;
-  cin >> opção;
+  cin >> opcao;
 
-  if (opção == 2){
-
-
+  if (opcao == 1){
+    funcaoDeGravar (opcao);
   }
 }
